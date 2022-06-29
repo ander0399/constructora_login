@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Anderson Escorcia">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Constructora Universal</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body class="text-center">
+    
+    <did class="login">
+
+        <div class="form-container">
+            <div class="logo-nombre">
+                <img src="img/logo.svg" alt="logo" class="logo">
+                <h1 class="nombre-constructora">Constructora Universal - Registrar</h1>
+            </div>
+            <form action="/register" method="POST" class="form" id="reset">
+
+                <label for="nombre" class="usuario">Ingresar Usuario</label>
+                <input type="text" id="usuario" placeholder="Digite usuario" class="input input-ingresar" name="user"
+                    required>
+                <label for="cedula" class="usuario">Ingresar Cedula</label>
+                <input type="text" id="usuario" placeholder="Digite Cedula" class="input input-ingresar" name="cedula"
+                    required>
+                <label for="password" class="usuario">Contraseña</label>
+                <input type="password"  id="password" placeholder="************"
+                    class="input input-ingresar"
+                    name="pass" required>
+
+                <label for="rol" class="usuario">rol</label>
+                <select name="rol" id="rol" class="select-css" >
+                    <option value="supervisor">supervisor</option>
+                    <option value="interventor">interventor</option>
+                </select>
+                <input type="submit" class="button-ingresar" value="guardar"  onclick="">
+                <a href="/login" class="olvide-contraseña">cancelar</a>
+
+            </form>
+        </div>
+    </did>
+    
+  </body>
+</html>

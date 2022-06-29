@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Anderson Escorcia">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Constructora Universal</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="text-center">
+
+    <div class="login">
+
+        <div class="form-container">
+            <div class="logo-nombre">
+                <img src="img/logo.svg" alt="logo" class="logo">
+                <h1 class="nombre-constructora">Constructora Universal</h1>
+            </div>
+            <form action="/login" method="POST" class="form">
+
+                <label for="usuario" class="usuario">Ingresar Usuario</label>
+                <input type="text" id="usuario" name="user" placeholder="Digite usuario" class="input input-ingresar">
+
+                <label for="password" class="usuario">Contraseña</label>
+                <input type="password" id="password" name="pass" placeholder="************"
+                    class="input input-ingresar">
+
+                <input type="submit" class="button-ingresar" value="Login">
+
+                <a class="button-ingresar" href="/register">Registrarse</a>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(alert){ %>
+        <script>
+            Swal.fire({
+                title: '<%=  alertTittle %>',
+                text: '<%=  alertMessage %>',
+                icon: '<%=  alertIcon %>',
+                showConfirmButton: '<%=  showConfirmButton %>',
+                timer: '<%=  timer %>'
+            }).then(()=>{
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+        <% } %>
+</body>
+
+</html>
