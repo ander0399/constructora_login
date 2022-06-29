@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 
 const app = express()
 
+const port = process.env.PORT || 3000;
+
 //seteamos motor de plantillas
 app.set('view engine','ejs')
 
@@ -34,6 +36,6 @@ app.use(function(req, res, next){
     next();
 });
 
-app.listen(3000,()=>{
-    console.log('SERVER UP Running in http://localhost:3000')
+app.listen(port,()=>{
+    console.log('SERVER UP en el puerto ', port)
 })
